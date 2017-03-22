@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.harsha.dell.zodiac.MainActivity"
+    android:background="@drawable/aaa">
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/zodiac"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ZODIAC"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="@color/whi"
+        android:textStyle="bold"
+        android:typeface="serif" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nam"
+            android:textSize="30dp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:typeface="serif" />
+
+        <EditText
+            android:textColor="@color/whi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="30dp"
+            android:id="@+id/et1"
+            android:typeface="serif" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:id="@+id/a"
+        android:layout_marginTop="10dp"
+        android:typeface="serif" />
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_toRightOf="@id/a"
+        android:layout_marginLeft="20dp"
+        android:background="@color/whi"
+        android:entries="@array/day"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="2dp"
+        >
+
+    </Spinner>
+
+
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month"
+            android:textColor="@color/red"
+            android:textSize="30dp"
+            android:id="@+id/a2"
+            android:layout_marginTop="10dp"
+
+            android:typeface="serif" />
+        <Spinner
+            android:id="@+id/sp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a2"
+            android:entries="@array/mo"
+            android:background="@color/whi"
+            android:paddingBottom="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            >
+
+        </Spinner>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:text="@string/but"
+        android:typeface="serif"
+        android:onClick="click"/>
+</LinearLayout>
